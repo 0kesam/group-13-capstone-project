@@ -23,11 +23,10 @@
 }
 
 .filterBar{
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
    padding: 3rem;
-   /* gap: 3rem; */
+   gap: 3rem;
    flex-wrap: wrap;
 }
 @media(max-width: 600px){
@@ -63,6 +62,39 @@
    border: 1px solid var(--light-color);
 }
 
+.btnAdd-group{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 3rem;
+}
+
+.farmerBuyerAdd{
+   border: 1px solid var(--light-color);
+   border-radius: 3rem;
+   background: var(--light-color);
+   padding: 1rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 2rem;
+}
+.farmerAdsBtn{
+   border: none;
+   background-color: var(--primary-color);
+   border-radius: 2rem;
+   padding: 2rem 3rem;
+}
+.buyerAdsBtn{
+   border: none;
+   background-color: transparent;
+   color: var(--text-color);
+   padding: 2rem 3rem;
+}
+
+.createAdBtn{
+
+}
 
 
 /* Product cards */
@@ -127,8 +159,8 @@
 
 .featured__product__wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  gap: 8rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 4rem;
   padding-top: 5rem;
   padding: 5rem;
 }
