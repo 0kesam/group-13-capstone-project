@@ -64,6 +64,8 @@
 
 .btnAdd-group{
    display: flex;
+   gap: 2rem;
+   flex-wrap: wrap;
    align-items: center;
    justify-content: space-between;
    padding: 0 3rem;
@@ -73,17 +75,35 @@
    border: 1px solid var(--light-color);
    border-radius: 3rem;
    background: var(--light-color);
-   padding: 1rem;
+   padding: 0.5rem;
    display: flex;
    align-items: center;
    justify-content: center;
    gap: 2rem;
+   flex-wrap: wrap;
+}
+@media(max-width: 600px){
+   .farmerBuyerAdd{
+      width: 100%;
+      /* background: none;
+      border: none; */
+      
+   }
+
+   .btnAdd-group{
+      flex-direction: column;
+   }
+
+   .createAdBtn{
+      width: 100%;
+      padding: 1rem;
+   }
 }
 .farmerAdsBtn{
    border: none;
    background-color: var(--primary-color);
    border-radius: 2rem;
-   padding: 2rem 3rem;
+   padding: 1.5rem 2rem;
 }
 .buyerAdsBtn{
    border: none;
@@ -92,9 +112,7 @@
    padding: 2rem 3rem;
 }
 
-.createAdBtn{
 
-}
 
 
 /* Product cards */
