@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+
+  
+   
+   <button class="add">Add</button>
+   <button class="Remove">Remove</button>
+
+   <script>
+      const myUl = document.createElement("ul");
+      const list = document.createElement("li");
+      const add = document.querySelector(".add");
+      const remove = document.querySelector(".remove");
+
+      
+
+      add.addEventListener("click", () => {
+        
+         // for(i= 0; i < 5; i++){
+             list.textContent = prompt("enter yoir text");
+             myUl.appendChild(list);
+             document.body.appendChild(myUl);
+         // }
+
+         
+      })
+
+      remove.addEventListener("click", () => {
+         myUl.removeChild(list);
+      })
+
+
+
+      // const list = document.createElement("ul");
+
+      // const myList = document.createElement("li");
+      // const myLists = document.createElement("li");
+      // const newlist = document.createElement("li");
+
+      // myList.textContent = "i am a list";
+      // newlist.textContent = "hello world";
+
+      // list.appendChild(myList);
+
+      // document.body.appendChild(list);
+
+      // myLists.textContent = "my prepend list";
+      // list.prepend(myLists);
+      // document.body.prepend(list);
+
+      // list.removeChild(myList);
+      // list.replaceChild(newlist, myLists);
+
+   </script>
+</body>
+</html>

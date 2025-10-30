@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+
+   <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+
+    <!-- phosphor icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/css/icons.min.css">
+   <link rel="stylesheet" href="farmhubLandingPage.css">
+   <link rel="stylesheet" href="marketplaceBuyers.css">
+</head>
+<body>
+
+      <section class="header">
+      <div class="header__wrapper">
+         <span class="header__logo">
+            <a href="index.html"> <img src="logo/IMG-20251029-WA0015.png" alt=""></a>
+            <h1 class="header__logo">Farm<span>Hub</span></h1>
+         </span>
+         <span class="mobile__menu">
+            <i id="toggle" class="ph ph-list"></i>
+         </span>
+     
+            <ul class="navbar__items" id="navbar">
+               <li class="navbar__link"><a href="index.html">Home</a></li>
+               <li class="navbar__link"><a href="shop.html">Marketplace</a></li>
+               <li class="navbar__link"><a href="blog.html">Find Farmers</a></li>
+               <li class="navbar__link"><a href="about.html">Find Farmers</a></li>
+               <li class="navbar__link"><a href="contact.html">About Us</a></li>
+
+
+               <ul class="navbar__signup" >
+                  <li class="navbar__login"><a href="index.html">Sign In</a></li>
+                  <li class="navbar__getStarted"><a href="shop.html">Get Started</a></li>
+               </ul>
+            </ul>  
+            
+            
+      </div>
+   </section>
+
+
+   <section class="marketplace__search">
+      <h2 class="marketplace__head">Market Place</h2>
+      <p class="marketplace__subtitle">Discover reliable farmers and quality products</p>
+
+      <div class="filterBar">
+         <span class="filterBar__search">
+            <label for="searchInput">Search</label>
+            <input id="searchInput" type="text" placeholder="Search products, farmers or location">
+         </span>
+         <span class="categorySelect__span">
+            <label for="categorySelect">Categories</label>
+               <select class="categorySelect" name="" id="categorySelect">
+                  <option value="all">All Categories</option>
+                  <option value="Vegetables">Vegetables</option>
+                  <option value="Fruits">Fruits</option>
+                  <option value="Grains">Grains</option>
+               </select>
+         </span>
+         <span class="relevant">
+            <label for="relevant">Relevant</label>
+            <select>
+               <option>Most Relevant</option>
+               <option>Newest</option>
+               <option>Oldest</option>
+            </select>
+         </span>
+      </div>
+
+      <div class="btn-group">
+         <button id="farmerAdsBtn" class="active">Farmer Ads</button>
+         <button id="buyerAdsBtn">Buyer Ads</button>
+         <button id="createAdBtn">Create Ad</button>
+    </div>
+   </section>
+     
+
+   <section class="Featured new__arrivals">
+     
+
+      <div class="featured__product__wrapper new__arrivals__wrappers">
+        
+         <div class="product__cards">
+            <img class="product__image" src="img/vegetables.jpg" alt="">
+            <span>Vegetables</span>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae veritatis aut enim dolores eius velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, saepe.</p>
+            <div class="product__button">
+               <button class="btn btn__farmer">View Farmer</button>
+               <button class="btn btn__contact">Contact</button>
+            </div>
+         </div>
+         <div class="product__cards">
+            <img class="product__image" src="img/fruits.jpg" alt="">
+            <span>Fruits</span>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae veritatis aut enim dolores eius velit? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, aut?</p>
+            <div class="product__button">
+               <button class="btn btn__farmer">View Farmer</button>
+               <button class="btn btn__contact">Contact</button>
+            </div>
+         </div>
+         <div class="product__cards">
+            <img class="product__image" src="img/grain.jpg" alt="">
+            <span>Grains</span>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae veritatis aut enim dolores eius velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, impedit?</p>
+            <div class="product__button">
+               <button class="btn btn__farmer">View Farmer</button>
+               <button class="btn btn__contact">Contact</button>
+            </div>
+         </div>
+         <div class="product__cards">
+            <img class="product__image" src="img/vegetables.jpg" alt="">
+            <span>Vegetables</span>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae veritatis aut enim dolores eius velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, saepe.</p>
+            <div class="product__button">
+               <button class="btn btn__farmer">View Farmer</button>
+               <button class="btn btn__contact">Contact</button>
+            </div>
+         </div>
+         <div class="product__cards">
+            <img class="product__image" src="img/fruits.jpg" alt="">
+            <span>Fruits</span>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae veritatis aut enim dolores eius velit? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, aut?</p>
+            <div class="product__button">
+               <button class="btn btn__farmer">View Farmer</button>
+               <button class="btn btn__contact">Contact</button>
+            </div>
+         </div>
+         <div class="product__cards">
+            <img class="product__image" src="img/grain.jpg" alt="">
+            <span>Grains</span>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae veritatis aut enim dolores eius velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, impedit?</p>
+            <div class="product__button">
+               <button class="btn btn__farmer">View Farmer</button>
+               <button class="btn btn__contact">Contact</button>
+            </div>
+         </div>
+         <div class="product__cards">
+            <img class="product__image" src="img/vegetables.jpg" alt="">
+            <span>Vegetables</span>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae veritatis aut enim dolores eius velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, saepe.</p>
+            <div class="product__button">
+               <button class="btn btn__farmer">View Farmer</button>
+               <button class="btn btn__contact">Contact</button>
+            </div>
+         </div>
+         <div class="product__cards">
+            <img class="product__image" src="img/fruits.jpg" alt="">
+            <span>Fruits</span>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae veritatis aut enim dolores eius velit? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, aut?</p>
+            <div class="product__button">
+               <button class="btn btn__farmer">View Farmer</button>
+               <button class="btn btn__contact">Contact</button>
+            </div>
+         </div>
+         <div class="product__cards">
+            <img class="product__image" src="img/grain.jpg" alt="">
+            <span>Grains</span>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae veritatis aut enim dolores eius velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, impedit?</p>
+            <div class="product__button">
+               <button class="btn btn__farmer">View Farmer</button>
+               <button class="btn btn__contact">Contact</button>
+            </div>
+         </div>
+         <div class="product__cards">
+            <img class="product__image" src="img/vegetables.jpg" alt="">
+            <span>Vegetables</span>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae veritatis aut enim dolores eius velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, saepe.</p>
+            <div class="product__button">
+               <button class="btn btn__farmer">View Farmer</button>
+               <button class="btn btn__contact">Contact</button>
+            </div>
+         </div>
+         <div class="product__cards">
+            <img class="product__image" src="img/fruits.jpg" alt="">
+            <span>Fruits</span>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae veritatis aut enim dolores eius velit? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, aut?</p>
+            <div class="product__button">
+               <button class="btn btn__farmer">View Farmer</button>
+               <button class="btn btn__contact">Contact</button>
+            </div>
+         </div>
+         <div class="product__cards">
+            <img class="product__image" src="img/grain.jpg" alt="">
+            <span>Grains</span>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae veritatis aut enim dolores eius velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, impedit?</p>
+            <div class="product__button">
+               <button class="btn btn__farmer">View Farmer</button>
+               <button class="btn btn__contact">Contact</button>
+            </div>
+         </div>
+        
+      
+         
+      </div>
+   </section>
+
+
+   <section class="footer">
+      <div class="footer__wrapper">
+          
+        <div class="footer__contact">
+            <h1>FarmHub</h1>
+            <!-- <img src="images/harisankar-sahoo-YZ3dMnYylvU-unsplash.png" alt=""> -->
+            <p>Bridges the gap between reliable farmers and trusted sellers</p>
+         
+        </div>
+
+        <div class="footer__links">
+            <h4>For Farmers</h4>
+            <a href="#">List Products</a>
+            <a href="#">Find Buyers</a>
+            <a href="#">For Farmers</a>
+        </div>
+
+        <div class="footer__links">
+            <h4>For Buyers</h4>
+            <a href="#">Browse Products</a>
+            <a href="#">Find Farmers</a>
+            <a href="#">Pricing</a>
+        </div>
+        <div class="footer__links">
+            <h4>Company</h4>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        
+
+        
+    </div>
+
+    <div class="copywrite">
+      <p>2025 @FarmHub 2025. all rights reserved</p>
+   </div> 
+    </section>
+
+
+   <script src="farmhubLandingPage.js"></script>
+</body>
+</html>
