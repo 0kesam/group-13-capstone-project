@@ -18,21 +18,24 @@
     <!-- phosphor icons -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/css/icons.min.css">
 
-<link rel="stylesheet" href="farmhubLandingPage.css">
+   <link rel="stylesheet" href="farmhubLandingPage.css">
+   <link rel="stylesheet" href="marketplaceBuyers.css">
 </head>
 <body>
 
    <section class="header">
       <div class="header__wrapper">
-         <h1 class="header__logo">Farm<span>Hub</span></h1>
-
+         <span class="header__logo">
+            <a href="index.html"> <img src="logo/IMG-20251029-WA0015.png" alt=""></a>
+            <h1 class="header__logo">FarmHub</h1>
+         </span>
          <span class="mobile__menu">
             <i id="toggle" class="ph ph-list"></i>
          </span>
      
             <ul class="navbar__items" id="navbar">
-               <li class="navbar__link"><a href="farmhubLandingPage.html">Home</a></li>
-               <li class="navbar__link"><a href="marketplaceBuyers.html">Marketplace</a></li>
+               <li class="navbar__link"><a href="index.html">Home</a></li>
+               <li class="navbar__link"><a href="shop.html">Marketplace</a></li>
                <li class="navbar__link"><a href="blog.html">Find Farmers</a></li>
                <li class="navbar__link"><a href="about.html">Find Farmers</a></li>
                <li class="navbar__link"><a href="contact.html">About Us</a></li>
@@ -60,17 +63,16 @@
                   <button class="btn btn__signup">Explore Marketplace</button>
                   <button class="btn btn__getstarted">Get Started</button>
                </div>
-
-         <p class="hero__trust">
+               <p class="hero__trust">
             Trusted by 5000+ Farmers & 2000+ Buyers
          </p>
 
-         </div>
-
-
-         
+         </div>   
       </div>
-      <div class="hero__statistics">
+      
+   </section>
+
+   <div class="hero__statistics">
          <div class="hero__stats">
             <h3>5,000+</h3>
             <p>Farmers</p>
@@ -88,7 +90,6 @@
             <p>Satisfied rate</p>
          </div>
       </div>
-   </section>
 
    <section class="why">
       
@@ -149,22 +150,65 @@
       </h1>
       <div class="about__wrapper">
          <img class="about__img" src="img/aboutfarmhub.jpg" alt="">
-         <p class="about__description">
+         <span class="about__description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis non mollitia sint possimus, doloremque eius optio eos laudantium at, eveniet necessitatibus provident quam earum illum molestiae hic numquam in saepe? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse pariatur mollitia nesciunt nostrum repudiandae molestiae eius, laboriosam inventore delectus dicta.
             <a href="#read">Read More</a>
-         </p>
-
-         
-
+            <span class="about__btn">
+               <button class="btn getStarted__btn">Explore Marketplace</button>
+               <button class="btn explore__btn">Get Started</button>
+            </span>
       </div>
-      <button class="btn hero__btn">Get Started</button>
+      
    </section>
+
+   
 
    <section class="review">
       <h1 class="review__head">
          Customer's Review
       </h1>
       <div class="review__wrapper">
+
+         <div class="review__card">
+            <div class="review__details">
+               <span class="review__stars">
+                  <i class="ph-fill ph-star"></i>
+                  <i class="ph-fill ph-star"></i>
+                  <i class="ph-fill ph-star"></i>
+                  <i class="ph-fill ph-star"></i>
+                  <i class="ph-fill ph-star"></i>
+              </span>
+              <img class="review__img" src="img/person1.jpg" alt="">
+            </div>
+            <p class="review__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sapiente fugit aliquam corrupti incidunt quis soluta libero autem.</p>
+         </div>
+         <div class="review__card">
+            <div class="review__details">
+               <span class="review__stars">
+                  <i class="ph-fill ph-star"></i>
+                  <i class="ph-fill ph-star"></i>
+                  <i class="ph-fill ph-star"></i>
+                  <i class="ph-fill ph-star"></i>
+                  <i class="ph-fill ph-star"></i>
+              </span>
+              <img class="review__img" src="img/person1.jpg" alt="">
+            </div>
+            <p class="review__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sapiente fugit aliquam corrupti incidunt quis soluta libero autem.</p>
+         </div>
+         <div class="review__card">
+            <div class="review__details">
+               <span class="review__stars">
+                  <i class="ph-fill ph-star"></i>
+                  <i class="ph-fill ph-star"></i>
+                  <i class="ph-fill ph-star"></i>
+                  <i class="ph-fill ph-star"></i>
+                  <i class="ph-fill ph-star"></i>
+              </span>
+              <img class="review__img" src="img/person1.jpg" alt="">
+            </div>
+            <p class="review__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sapiente fugit aliquam corrupti incidunt quis soluta libero autem.</p>
+         </div>
+         
 
       </div>
 
@@ -178,8 +222,10 @@
       <div class="footer__wrapper">
           
         <div class="footer__contact">
-            <h1>FarmHub</h1>
-            <!-- <img src="images/harisankar-sahoo-YZ3dMnYylvU-unsplash.png" alt=""> -->
+         <span class="footer__logo">
+            <a href="index.html"> <img src="logo/IMG-20251029-WA0015.png" alt=""></a>
+            <h1 class="footer__logo">FarmHub</h1>
+         </span>
             <p>Bridges the gap between reliable farmers and trusted sellers</p>
          
         </div>
