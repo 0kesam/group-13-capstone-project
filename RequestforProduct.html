@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RequestForProduct</title>
+   <link rel="stylesheet" href="RequestForProduct.css">
+   <link rel="stylesheet" href="Resetpassword.css">
+   <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/light/style.css"
+    />
+
+</head>
+<body>
+     <header class="navbar">
+        <div class="nav-content">
+            <span class="logo"><img src="image/logo.jpg" alt="Farmhub" class="logo-icon">FarmHub</span>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Marketplace</a></li>
+                    <li><a href="#">Find Farmers</a></li>
+                    <li><a href="#">Find Buyers</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button class="btn sign-in">Sign In</button>
+                <button class="btn get-started">Get Started</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="content-wrapper">
+        <h1>Request For Product</h1>
+        <div class="page-layout">
+            <div class="form-layout" >
+            <form class="product-form">
+                <div class="input-group">
+                    <label for="productName">Product Name</label>
+                    <input type="text" id="productName" placeholder="e.g. Yellow Maize, not just corn">
+                </div>
+                
+                <div class="input-group half">
+                    <label for="category">Category</label>
+                    <select id="category">
+                        <option value="">Select the right category</option>
+                        <option value="grains">Grains</option>
+                        <option value="fruits">Fruits</option>
+                    </select>
+                </div>
+                
+                <div class="input-group half">
+                    <label for="quantity">Quantity Needed</label>
+                    <input type="text" id="quantity" placeholder="e.g. 50 bags of 50kg">
+                </div>
+
+                <div class="input-group half date-group">
+                    <label for="deliveryFrom">Delivery Date: From</label>
+                    <input type="date" id="deliveryFrom">
+                </div>
+
+                <div class="input-group half date-group">
+                    <label for="deliveryTo">Delivery Date: To</label>
+                    <input type="date" id="deliveryTo">
+                </div>
+
+                <div class="input-group half">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" placeholder="Enter town & landmark">
+                </div>
+
+                <div class="input-group half">
+                    <label for="state">State</label>
+                    <select id="state">
+                        <option value="">Select State</option>
+                        <option value="lagos">Lagos</option>
+                        <option value="kano">Kano</option>
+                    </select>
+                </div>
+
+                <div class="input-group half upload-box">
+                    <label>Upload Picture</label>
+                    <div class="file-upload">
+                        <input type="file" id="fileInput" hidden>
+                        <label for="fileInput">
+                            <span class="upload-icon"><i class="ph-light ph-upload-simple"></i></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="input-group half">
+                    <label  for="note">Additional Note</label>
+                    <textarea id="note" rows="4"></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">Submit Request</button>
+            </form>
+           
+                <aside class="request-tips">
+                <h3>Request Tips</h3>
+                <ul>
+                    <li>Be **specific** - e.g. Yellow Maize, not just Corn. And include the unit (e.g. bags of 50kg).</li>
+                    <li>The delivery dates help better scheduling and sourcing.</li>
+                    <li>Upload pictures to get the right quality (JPG/JPEG/PNG/BMP).</li>
+                </ul>
+            </aside>
+
+            
+     
+                
+
+            
+        </div>
+        </div>
+        
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <p>FarmHub</p>
+                <p class="tagline">bridge the gap between reliable farmers and trusted buyers.</p>
+            </div>
+            
+            <div class="footer-links">
+                <div class="link-column">
+                    <h4>For Farmers</h4>
+                    <ul>
+                        <li>List Product</li>
+                        <li>Find Buyers</li>
+                        <li>For Farmers</li>
+                    </ul>
+                </div>
+                <div class="link-column">
+                    <h4>For Buyers</h4>
+                    <ul>
+                        <li>Browse Product</li>
+                        <li>Find Farmers</li>
+                        <li>Pricing</li>
+                    </ul>
+                </div>
+                <div class="link-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 FarmHub. All rights reserved.</p>
+            <div class="social-icons">
+                <span>X</span>
+                <span>O</span>
+                <span>in</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
