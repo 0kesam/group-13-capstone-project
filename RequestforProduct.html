@@ -5,56 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RequestForProduct</title>
    <link rel="stylesheet" href="RequestForProduct.css">
+   <link rel="stylesheet" href="Resetpassword.css">
+   <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/light/style.css"
+    />
 
-   <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-
-    <!-- phosphor icons -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/css/icons.min.css">
-
-   <link rel="stylesheet" href="farmhubLandingPage.css">
-   <link rel="stylesheet" href="marketplaceBuyers.css">
 </head>
 <body>
-    <section class="header">
-      <div class="header__wrapper">
-         <span class="header__logo">
-            <a href="index.html"> <img src="logo/IMG-20251029-WA0015.png" alt=""></a>
-            <h1 class="header__logo">FarmHub</h1>
-         </span>
-         <span class="mobile__menu">
-            <i id="toggle" class="ph ph-list"></i>
-         </span>
-     
-            <ul class="navbar__items" id="navbar">
-               <li class="navbar__link"><a href="index.html">Home</a></li>
-               <li class="navbar__link"><a href="shop.html">Marketplace</a></li>
-               <li class="navbar__link"><a href="blog.html">Find Farmers</a></li>
-               <li class="navbar__link"><a href="about.html">Find Farmers</a></li>
-               <li class="navbar__link"><a href="contact.html">About Us</a></li>
-
-
-               <ul class="navbar__signup" >
-                  <li class="navbar__login"><a href="index.html">Sign In</a></li>
-                  <li class="navbar__getStarted"><a href="shop.html">Get Started</a></li>
-               </ul>
-            </ul>  
-            
-            
-      </div>
-   </section>
+     <header class="navbar">
+        <div class="nav-content">
+            <span class="logo"><img src="image/logo.jpg" alt="Farmhub" class="logo-icon">FarmHub</span>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Marketplace</a></li>
+                    <li><a href="#">Find Farmers</a></li>
+                    <li><a href="#">Find Buyers</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button class="btn sign-in">Sign In</button>
+                <button class="btn get-started">Get Started</button>
+            </div>
+        </div>
+    </header>
 
     <main class="content-wrapper">
         <h1>Request For Product</h1>
-        
-        <div class="form-layout">
+        <div class="page-layout">
+            <div class="form-layout" >
             <form class="product-form">
                 <div class="input-group">
                     <label for="productName">Product Name</label>
@@ -104,20 +86,20 @@
                     <div class="file-upload">
                         <input type="file" id="fileInput" hidden>
                         <label for="fileInput">
-                            <span class="upload-icon">↑</span>
+                            <span class="upload-icon"><i class="ph-light ph-upload-simple"></i></span>
                         </label>
                     </div>
                 </div>
 
                 <div class="input-group half">
-                    <label for="note">Additional Note</label>
+                    <label  for="note">Additional Note</label>
                     <textarea id="note" rows="4"></textarea>
                 </div>
                 
                 <button type="submit" class="submit-btn">Submit Request</button>
             </form>
-
-            <aside class="request-tips">
+           
+                <aside class="request-tips">
                 <h3>Request Tips</h3>
                 <ul>
                     <li>Be **specific** - e.g. Yellow Maize, not just Corn. And include the unit (e.g. bags of 50kg).</li>
@@ -125,58 +107,62 @@
                     <li>Upload pictures to get the right quality (JPG/JPEG/PNG/BMP).</li>
                 </ul>
             </aside>
+
+            
+     
+                
+
+            
         </div>
+        </div>
+        
     </main>
 
-    <section class="footer">
-      <div class="footer__wrapper">
-          
-        <div class="footer__contact">
-         <span class="footer__logo">
-            <a href="index.html"> <img src="logo/IMG-20251029-WA0015.png" alt=""></a>
-            <h1 class="footer__logo">FarmHub</h1>
-         </span>
-            <p>Bridges the gap between reliable farmers and trusted sellers</p>
-         
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <p>FarmHub</p>
+                <p class="tagline">bridge the gap between reliable farmers and trusted buyers.</p>
+            </div>
+            
+            <div class="footer-links">
+                <div class="link-column">
+                    <h4>For Farmers</h4>
+                    <ul>
+                        <li>List Product</li>
+                        <li>Find Buyers</li>
+                        <li>For Farmers</li>
+                    </ul>
+                </div>
+                <div class="link-column">
+                    <h4>For Buyers</h4>
+                    <ul>
+                        <li>Browse Product</li>
+                        <li>Find Farmers</li>
+                        <li>Pricing</li>
+                    </ul>
+                </div>
+                <div class="link-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-
-        <div class="footer__links">
-            <h4>For Farmers</h4>
-            <a href="#">List Products</a>
-            <a href="#">Find Buyers</a>
-            <a href="#">For Farmers</a>
-        </div>
-
-        <div class="footer__links">
-            <h4>For Buyers</h4>
-            <a href="#">Browse Products</a>
-            <a href="#">Find Farmers</a>
-            <a href="#">Pricing</a>
-        </div>
-        <div class="footer__links">
-            <h4>Company</h4>
-            <a href="#">About Us</a>
-            <a href="#">Contact Us</a>
-        </div>
-
         
-
-        
-    </div>
-
-      <div class="copywrite">
-         <p>© 2025 FarmHub. All rights reserved.</p>
-         <span>
-            <a href="#"><i class="ph ph-facebook-logo"></i></a>
-            <a href="#"><i class="ph ph-twitter-logo"></i></a>
-            <a href="#"><i class="ph ph-instagram-logo"></i></a>
-            <a href="#"><i class="ph ph-linkedin-logo"></i></a>
-          </span>
-      </div> 
-    </section>
+        <div class="footer-bottom">
+            <p>© 2025 FarmHub. All rights reserved.</p>
+            <div class="social-icons">
+                <span>X</span>
+                <span>O</span>
+                <span>in</span>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
-    <script src="farmhubLandingPage.js"></script>
 
 </body>
 </html>
