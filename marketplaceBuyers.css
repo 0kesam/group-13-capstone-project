@@ -82,6 +82,11 @@
    gap: 2rem;
    flex-wrap: wrap;
 }
+
+.farmerAdsBtn.active{
+   background-color: var(--primary-color);
+   color: var(--secondary-color);
+}
 @media(max-width: 600px){
    .farmerBuyerAdd{
       width: 100%;
@@ -101,15 +106,10 @@
 }
 .farmerAdsBtn{
    border: none;
-   background-color: var(--primary-color);
    border-radius: 2rem;
    padding: 1.5rem 2rem;
 }
-.farmerAdsBtn a,
-.buyerAdsBtn a{
-   color: var(--secondary-color);
-   text-decoration: none;
-}
+
 
 
 .buyerAdsBtn{
