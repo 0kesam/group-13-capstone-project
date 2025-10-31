@@ -1,9 +1,9 @@
 :root {
-    --primary-green: #385e38; /* Darker green for footer and text */
-    --form-bg: #e0e6d5;       /* Light olive/khaki background for form */
-    --tip-bg: #d1e4c7;        /* Lighter green for tips box */
+    --primary-green: #0b4812; /* Darker green for footer and text */
+    --form-bg: #c6d6b5;       /* Light olive/khaki background for form */
+    --tip-bg: ##c6d6b5;;        /* Lighter green for tips box */
     --text-color: #333;
-    --white: #fff;
+    --white: #f8f8f8;
     --border-color: #ccc;
     --max-width: 1000px;
 }
@@ -20,11 +20,17 @@ body {
     color: var(--text-color);
 }
 
-.content-wrapper {
+.content-wrapper{
     max-width: var(--max-width);
     margin: 40px auto;
     padding: 0 20px;
-}
+}  
+ /* .page-layout{
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+ } */
+    
 
 h1 {
     text-align: center;
@@ -34,16 +40,18 @@ h1 {
 
 /* --- Form Layout and Styling --- */
 .form-layout {
-    display: flex;
-    gap: 20px;
+     display: flex;
+    gap: 20px;  
     background-color: var(--form-bg);
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); 
+    flex-grow: 1; 
+     */
 }
 
 .product-form {
-    flex: 2; /* Takes up more space */
+    flex: 2;/* Takes up more space  */
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
@@ -53,6 +61,7 @@ h1 {
     width: 100%;
     display: flex;
     flex-direction: column;
+    
 }
 
 .input-group.half {
@@ -92,7 +101,7 @@ textarea {
 
 .file-upload {
     width: 100%;
-    height: 100px;
+    height: 200px;
     border: 2px dashed var(--border-color);
     border-radius: 4px;
     display: flex;
@@ -105,6 +114,11 @@ textarea {
 .upload-icon {
     font-size: 3em;
     color: #999;
+}
+.page-layout{
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
 }
 
 /* Submit Button */
@@ -128,12 +142,21 @@ textarea {
 
 /* Request Tips Sidebar */
 .request-tips {
-    flex: 1; /* Takes up less space */
+     flex: 1; 
     background-color: var(--tip-bg);
     padding: 20px;
     border-radius: 8px;
     height: fit-content; /* Only take up the necessary height */
+    /* width: 280px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); */ */
+
 }
+/* .content-wrapper{
+  
+    display: flex;
+    gap: 25px; /* Space between the tips box and the form box */
+    align-items: flex-start; /* Aligns the tops of the boxes */
+/*} */
 
 .request-tips h3 {
     color: var(--primary-green);
@@ -219,11 +242,12 @@ textarea {
 
 /* --- Responsiveness (Media Queries) --- */
 @media (max-width: 850px) {
-    .form-layout {
+    /* .page-layout {
         flex-direction: column; /* Stacks the form and tips */
-    }
+    }  */
 
     .request-tips {
+         /* width: 100%;  */
         order: -1; /* Puts tips above the form on small screens */
     }
 
@@ -243,9 +267,14 @@ textarea {
         gap: 20px;
         width: 100%;
     }
-}
+
 
 @media (max-width: 600px) {
+    
+    .request-tips{
+        /* width: 100%; */
+        order: -1;
+    }
     .product-form {
         flex-direction: column; /* All inputs stack vertically */
     }

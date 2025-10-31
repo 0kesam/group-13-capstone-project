@@ -5,15 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RequestForProduct</title>
    <link rel="stylesheet" href="RequestForProduct.css">
+   <link rel="stylesheet" href="Resetpassword.css">
+   <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/light/style.css"
+    />
+
 </head>
 <body>
-    <header class="main-header">
-        </header>
+     <header class="navbar">
+        <div class="nav-content">
+            <span class="logo"><img src="image/logo.jpg" alt="Farmhub" class="logo-icon">FarmHub</span>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Marketplace</a></li>
+                    <li><a href="#">Find Farmers</a></li>
+                    <li><a href="#">Find Buyers</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button class="btn sign-in">Sign In</button>
+                <button class="btn get-started">Get Started</button>
+            </div>
+        </div>
+    </header>
 
     <main class="content-wrapper">
         <h1>Request For Product</h1>
-        
-        <div class="form-layout">
+        <div class="page-layout">
+            <div class="form-layout" >
             <form class="product-form">
                 <div class="input-group">
                     <label for="productName">Product Name</label>
@@ -63,20 +86,20 @@
                     <div class="file-upload">
                         <input type="file" id="fileInput" hidden>
                         <label for="fileInput">
-                            <span class="upload-icon">↑</span>
+                            <span class="upload-icon"><i class="ph-light ph-upload-simple"></i></span>
                         </label>
                     </div>
                 </div>
 
                 <div class="input-group half">
-                    <label for="note">Additional Note</label>
+                    <label  for="note">Additional Note</label>
                     <textarea id="note" rows="4"></textarea>
                 </div>
                 
                 <button type="submit" class="submit-btn">Submit Request</button>
             </form>
-
-            <aside class="request-tips">
+           
+                <aside class="request-tips">
                 <h3>Request Tips</h3>
                 <ul>
                     <li>Be **specific** - e.g. Yellow Maize, not just Corn. And include the unit (e.g. bags of 50kg).</li>
@@ -84,7 +107,15 @@
                     <li>Upload pictures to get the right quality (JPG/JPEG/PNG/BMP).</li>
                 </ul>
             </aside>
+
+            
+     
+                
+
+            
         </div>
+        </div>
+        
     </main>
 
     <footer class="main-footer">
