@@ -13,29 +13,49 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="sign-in.css">
+
+    <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+
+    <!-- phosphor icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/css/icons.min.css">
+   <link rel="stylesheet" href="farmhubLandingPage.css">
+   <link rel="stylesheet" href="marketplaceBuyers.css">
 </head>
 <body>
-    <!-- <header class="header">
-        <div class="header-logo">
-            <div class="header-logo-icon"></div>
-            <div class="header-logo-title">FarmHub</div>
-        </div>
+    
+      <section class="header">
+      <div class="header__wrapper">
+         <span class="header__logo">
+            <a href="index.html"> <img src="logo/IMG-20251029-WA0015.png" alt=""></a>
+            <h1 class="header__logo">FarmHub</h1>
+         </span>
+         <span class="mobile__menu">
+            <i id="toggle" class="ph ph-list"></i>
+         </span>
+     
+            <ul class="navbar__items" id="navbar">
+               <li class="navbar__link"><a href="index.html">Home</a></li>
+               <li class="navbar__link"><a href="shop.html">Marketplace</a></li>
+               <li class="navbar__link"><a href="blog.html">Find Farmers</a></li>
+               <li class="navbar__link"><a href="about.html">Find Farmers</a></li>
+               <li class="navbar__link"><a href="contact.html">About Us</a></li>
 
-        <nav class="header-nav">
-            <ul class="nav-items">
-                <li class="nav-item"><a href="" class="nav-item-link">Home</a></li>
-                <li class="nav-item"><a href="" class="nav-item-link">Marketplace</a></li>
-                <li class="nav-item"><a href="" class="nav-item-link">Find Farmers</a></li>
-                <li class="nav-item"><a href="" class="nav-item-link">Find Buyers</a></li>
-                <li class="nav-item"><a href="" class="nav-item-link">About Us</a></li>
-            </ul>
-        </nav>
 
-        <div class="header-buttons">
-            <button class="btn-sign-in btn">Sign In</button>
-            <button class="btn-get-started btn">Get Started</button>
-        </div>
-    </header> -->
+               <ul class="navbar__signup" >
+                  <li class="navbar__login"><a href="index.html">Sign In</a></li>
+                  <li class="navbar__getStarted"><a href="shop.html">Get Started</a></li>
+               </ul>
+            </ul>  
+            
+            
+      </div>
+   </section>
 
     <section class="main-page">
         <div class="welcome-back">
@@ -77,5 +97,53 @@
             </div>
         </div>
     </section>
+
+
+    <section class="footer">
+      <div class="footer__wrapper">
+          
+        <div class="footer__contact">
+         <span class="footer__logo">
+            <a href="index.html"> <img src="logo/IMG-20251029-WA0015.png" alt=""></a>
+            <h1 class="footer__logo">FarmHub</h1>
+         </span>
+            <p>Bridges the gap between reliable farmers and trusted sellers</p>
+         
+        </div>
+
+        <div class="footer__links">
+            <h4>For Farmers</h4>
+            <a href="#">List Products</a>
+            <a href="#">Find Buyers</a>
+            <a href="#">For Farmers</a>
+        </div>
+
+        <div class="footer__links">
+            <h4>For Buyers</h4>
+            <a href="#">Browse Products</a>
+            <a href="#">Find Farmers</a>
+            <a href="#">Pricing</a>
+        </div>
+        <div class="footer__links">
+            <h4>Company</h4>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </div>
+
+      <div class="copywrite">
+         <p>© 2025 FarmHub. All rights reserved.</p>
+         <span>
+            <a href="#"><i class="ph ph-facebook-logo"></i></a>
+            <a href="#"><i class="ph ph-twitter-logo"></i></a>
+            <a href="#"><i class="ph ph-instagram-logo"></i></a>
+            <a href="#"><i class="ph ph-linkedin-logo"></i></a>
+          </span>
+      </div> 
+    </section>
+
+
+   <script src="farmhubLandingPage.js"></script>
+   <script src="marketPlace.js"></script>
 </body>
 </html>

@@ -4,19 +4,7 @@
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
 }
-/* 
-.header-logo-icon{
-    width: 2rem;
-    height: 2rem;
-    background: grey;
-    border-radius: 50%;
-}
 
-.header-logo{
-    display: flex;
-    gap: 8px;
-    align-items: center;
-} */
 
 body{
     background: whitesmoke;
