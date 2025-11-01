@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FarmHub | Create Account</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+
+  <link rel="stylesheet" href="get started.css" />
+
+</head>
+<body>
+    <main class="container">
+    <section class="left">
+      <h1>Sign Up For Free</h1>
+      <p>A connected farming community where every farmer can succeed</p>
+      <div class="buttons">
+        <button class="btn-outline">Explore Marketplace</button>
+        <button class="btn-fill">Sign In</button>
+      </div>
+    </section>
+
+    <section class="right">
+      <h2>Create New Account</h2>
+      <form>
+        <label>Email</label>
+        <input type="email" placeholder="Enter Email" required />
+
+        <label>First Name</label>
+        <input type="text" placeholder="Enter First Name" required />
+
+        <label>Last Name</label>
+        <input type="text" placeholder="Enter Last Name" required />
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter Phone Number" required />
+
+        <label>Account Type</label>
+        <select required>
+          <option value="">Select Account Type</option>
+          <option value="farmer">Farmer</option>
+          <option value="buyer">Buyer</option>
+          <option value="Both">Buyer & Farmer</option>
+        </select>
+
+        <label>Password</label>
+        <input type="password" placeholder="Enter Password" required />
+
+        <label>Confirm Password</label>
+        <input type="password" placeholder="Enter Confirm Password" required />
+
+        <div class="terms">
+          <input type="checkbox" required  class="box"/>
+          <div class="Agree"><span>Agree to terms and policy</span></div>
+        </div>
+
+        <button type="submit" class="btn-fill full">Create Account</button>
+
+        <div class="divider">OR</div>
+
+        <button class="btn-google full">Continue With Google</button>
+      </form>
+    </section>
+  </main>
+  <script src="get started.js"> </script>
+</body>
+</html>
