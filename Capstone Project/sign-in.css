@@ -13,26 +13,49 @@ body{
     font-size: 62.5%;
 }
 .main-page{
-    padding: 8rem 4rem;
+    
+    padding: 5rem;
     display: flex;
-    justify-content: space-between;
+    
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
 }
+@media(max-width: 600px){
+    .main-page{
+        width: 100%;
+        flex-direction: column;
+    }
 
+    .welcome-back{
+        width: 100%;
+        /* align-items: center; */
+    }
+}
 .heading{
-    font-size: 2.4rem;
+    font-size: 3rem;
     color: #0B4812;
 }
 
 .paragraph{
-    font-size: 1.6rem;
+    font-size: 2rem;
     color: #0B4812;
     line-height: 2.4rem;
+    
 }
 
 .welcome-back{
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    justify-content: center ;
+    /* align-items: center; */
+    gap: 1rem;
+}
+
+.welcome-back-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .btn{
@@ -57,7 +80,8 @@ body{
 .sign-in{
     display: flex;
     flex-direction: column;
-    margin-left: 4rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .sign-in-form{
@@ -83,9 +107,7 @@ label{
     display: flex;
     gap: 8px;
 }
-/* #checkbox{
-    border: 1px solid black;
-} */
+
 
 #forget-password{
     margin-left: 30rem;
