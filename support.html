@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SupportPage</title>
+     <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link rel="stylesheet" href="support.css">
+</head>
+<body>
+  <main>
+    <section class="welcome-section">
+        <div class="text">
+             <h2>Hello, How Can We Help You</h2>
+        <p>Find answers or reach our team for support</p>
+       </div>
+       
+        <div class="image-gallery">
+            <div class="gallery-item"><img src="image/handshake.jpg" alt="handshake"></div>
+            <div class="gallery-item"><img src="image/threepeople.jpg" alt="3people"></div>
+            <div class="gallery-item"><img src="image/manandson.jpg" alt="man"></div>
+        </div>
+         
+    </section>
+
+    <section class="faq-section">
+        <h3>Frequently Asked Questions</h3>
+        <div class="faq-container">
+            <div class="faq-column">
+                <div class="faq-item">
+                    <button class="faq-question">What is FarmHub?</button>
+                    <div class="faq-answer">
+                        <p>A free platform where farmers, buyers, and sellers connect directly to trade farm produce and equipment.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Is FarmHub safe?</button>
+                    <div class="faq-answer">
+                        <p>Yes. We moderate and allow public comments so everyone can see the conversation.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">How do I post a product?</button>
+                    <div class="faq-answer">
+                        <p>Log in, navigate to your dashboard, and tap "Create Listing."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-column">
+                <div class="faq-item">
+                    <button class="faq-question">Do I pay through the app?</button>
+                    <div class="faq-answer">
+                        <p>No. Farm Hub does not handle payments. You deal directly with the seller or buyer.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Can I use FarmHub on my phone?</button>
+                    <div class="faq-answer">
+                        <p>Yes. FarmHub works on smartphones and computers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="form-card">
+            <h4>Still Need Help ?</h4>
+            <p class="form-fill-text">Fill this form</p>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telephone">Telephone</label>
+                    <input type="tel" id="telephone" name="telephone">
+                </div>
+                <div class="form-group">
+                    <label for="comment">Comment</label>
+                    <textarea id="comment" name="comment" rows="8" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="follow-us-section">
+        <p>Follow Us On</p>
+        <div class="social-icons">
+            <span><i class="ph ph-x-logo"></i></span>
+            <span><i class="ph ph-facebook-logo"></i></span>
+            <span> <i class="ph ph-instagram-logo"></i></span>
+           
+        </div>
+    </section>
+</main> 
+<script src="script.js"></script> 
+</body>
+</html>

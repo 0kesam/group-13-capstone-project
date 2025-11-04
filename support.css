@@ -1,0 +1,265 @@
+/* General Body Styles for the main content area */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Page background */
+    color: #333;
+}
+
+main {
+    padding: 20px 5%; /* Padding around the entire body content */
+    max-width: 1200px; /* Max width for content centering */
+    margin: 0 auto;
+}
+
+/* --- Welcome Section Styles --- */
+.welcome-section {
+    text-align: center;
+    padding: 20px 0;
+    /* background-color: #1a4f1a; */
+   
+}
+ .text{
+  
+  background-color: #1a4f1a;
+     
+} 
+
+.welcome-section h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #f4f4f4;;
+}
+
+.welcome-section p {
+    font-size: 1.1em;
+    color: #f4f4f4;
+    margin-bottom: 30px;
+
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 60px;
+}
+
+.gallery-item {
+    width: 30%;
+    height: 180px;
+    background-color: #ddd; /* Placeholder color for images */
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    font-weight: bold;
+    overflow: hidden; /* Ensures content/background images fit */
+}
+
+/* --- FAQ Section Styles --- */
+.faq-section {
+    padding: 20px 0;
+    color: #1a4f1a;
+}
+
+.faq-section h3 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.faq-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.faq-column {
+    flex-basis: 48%; /* Adjust for spacing */
+}
+
+.faq-item {
+    margin-bottom: 30px;
+}
+
+.faq-question {
+    background: none;
+    border: none;
+    text-align: left;
+    width: 100%;
+    padding: 0;
+    font-size: 2.1em;
+    font-weight: bold;
+    color: #1a4f1a; /* Dark green for questions */
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+    padding: 0 10px;
+    color: #1a4f1a;
+}
+
+.faq-answer p {
+    font-size: 1.5em;
+    line-height: 1.5;
+    color: #1a4f1a;
+    margin: 0;
+}
+
+/* Class added by JavaScript to show the answer */
+.faq-answer.open {
+    max-height: 200px; /* Sufficient height for content */
+    padding-top: 5px;
+}
+
+/* Style for questions in the image (non-accordion, just text/layout) */
+/* The image doesn't show an accordion, so we style it as fixed text based on the image */
+.faq-answer {
+    max-height: none; /* Override accordion style to show all answers */
+    overflow: visible;
+    padding: 0;
+    transition: none;
+    color: #1a4f1a;
+}
+.faq-answer p {
+    color: #1a4f1a;
+    font-weight: 400;
+    padding-left: 0;
+}
+
+
+/* --- Contact Form Section Styles --- */
+.contact-section {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.form-card {
+    background-color: #f7f7f7; /* Light background for the form card */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+}
+
+.form-card h4 {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.form-fill-text {
+    font-size: 0.9em;
+    color: #999;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.9em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding in element's total width/height */
+    font-size: 1em;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #1a4f1a;
+}
+
+.submit-button {
+    background-color: #444444; /* Dark gray background */
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    width: 150px;
+}
+
+.submit-button:hover {
+    background-color: #555555;
+}
+
+/* --- Follow Us Section Styles --- */
+.follow-us-section {
+    text-align: center;
+    padding: 20px 0 40px 0;
+}
+
+.follow-us-section p {
+    font-size: 1em;
+    color: #1a4f1a;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.social-icons span {
+    font-size: 1.5em;
+    margin: 0 10px;
+    color: #1a4f1a; /* Placeholder color for icons */
+    cursor: pointer;
+}
+
+/* --- Responsiveness for smaller screens --- */
+@media (max-width: 768px) {
+    .image-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery-item {
+        width: 80%;
+        height: 150px;
+    }
+
+    .faq-container {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .faq-column {
+        flex-basis: 100%;
+    }
+
+    .faq-question {
+        font-size: 1em;
+    }
+
+    .form-card {
+        padding: 25px;
+    }
+}

@@ -68,3 +68,35 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log("Password reset attempt complete.");
     });
 });
+
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const faqQuestions = document.querySelectorAll('.faq-question');
+
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                
+                // Toggle the 'open' class on the answer
+                answer.classList.toggle('open');
+                
+                // For a true accordion where only one is open at a time, uncomment the block below:
+                /*
+                faqQuestions.forEach(otherQuestion => {
+                    const otherAnswer = otherQuestion.nextElementSibling;
+                    if (otherQuestion !== question && otherAnswer.classList.contains('open')) {
+                        otherAnswer.classList.remove('open');
+                    }
+                });
+                */
+            });
+        });
+    });
+
+    // Optional: Basic form submission alert
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Form submitted! (Frontend only simulation)');
+        // In a real application, you would send this data to a server here.
+        this.reset();
+    });
