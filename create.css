@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #F5F5F5;
+}
+
+.ad-heading{
+    display: flex;
+    gap: 3rem;
+    margin: 3rem 0 3rem 4rem;
+    align-items: center;
+}
+
+.back-btn{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    width: 7rem;
+    height: 3rem;
+    background-color: #0B4812;
+    color: #fff;
+    border-radius: 6px;
+    padding: 1rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.heading{
+    font-size: 3rem;
+}
+
+.paragraph{
+    font-size: 1.3rem;
+    color: #000;
+    font-weight: 700;
+}
+
+.container{
+    /* margin: 3rem 5rem 3rem 5rem; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    gap: 4rem;
+    align-items: center;
+}
+
+.ad-type,.product-image, .product-details{
+    background-color: #C6D6B5;
+    padding: 1rem 1rem 1.5rem 1rem;
+    border-radius: 6px;
+    width: 100rem;
+}
+
+.buy-sell-boxes{
+    display: flex;
+}
+
+.buy-sell-box{
+   display:flex;
+   flex-direction: column;
+   gap: 0.8rem;
+   background-color: #fff;
+   padding: 1rem 1rem;
+   margin-top: 2rem;
+   border-radius: 6px;
+   justify-content: space-evenly;
+}
+
+.sell-box{
+    margin-right: 2rem;
+    border: 2px solid #000;
+}
+
+.product-image-heading{
+    margin-bottom: 1rem;
+}
+.image-upload-box{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    background-color: #F5F5F5;
+    padding: 2rem 4rem;
+    margin-top: 2rem;
+    border-radius: 6px;
+    border: 2px dotted #000;
+    justify-content: center;
+    align-items: center;
+    width: 12rem;
+    height: 12rem;
+    margin: 3rem 0 3rem 4rem;
+}
+.ph-upload-simple{
+    font-size: 6rem;
+}
+
+.note{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    background-color: #fff;
+    padding: 0.5rem;
+    border-radius: 6px;
+}
+
+.buttons{
+    display: flex;
+    gap: 1rem;
+    /* justify-content: center; */
+    margin: 1rem 0 5rem 0;
+
+}
+
+.btn{
+    padding: 0.5rem 21.5rem;
+    border-radius: 6px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.cancel-btn{
+    background-color: #E0E0E0;
+    border: 2px solid #0B4812;
+    color: #000;
+}
+.post-btn{
+    background-color: #0B4812;
+    color: #fff;
+    border: none;
+}
+
+textarea{   
+  resize: none;
+  overflow: auto;
+  border-radius: 1rem;
+}

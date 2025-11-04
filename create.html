@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREATE-NEW-AD PAGE</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/thin/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/bold/style.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="create.css">
+</head>
+<body>
+    <!-- back button and new ad heading  -->
+    <div class="ad-heading">
+        <button class="back-btn">
+            <span>
+                <i class="ph-fill ph-arrow-left"></i>
+            </span>
+            <span>Back</span>
+        </button>
+        <div class="heading-paragraph">
+            <h1 class="heading">Create New Ad</h1>
+            <p class="paragraph">List your product or buying request</p>
+        </div>
+    </div>
+
+    <!-- main container -->
+    <div class="container">
+        <section class="ad-type">
+            <h2 class="ad-type-heading">Ad Type</h2>
+            <div class="buy-sell-boxes">
+                <div class="buy-sell-box sell-box">
+                    <h3>I Want to Sell</h3>
+                    <p class="paragraph">List products you want to sell to buyers </p>
+                </div>
+                <div class="buy-sell-box buy-box">
+                    <h3>I Want to Buy</h3>
+                    <p class="paragraph">List products you are looking to buy from farmers </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-image">
+            <h2 class="product-image-heading">Product Image</h2>
+            <p class="paragraph">Add up to 5 images.First image will be the cover photo.</p>
+            <div class="image-upload-box">
+                <span>
+                    <i class="ph-thin ph-upload-simple"></i>
+                </span>
+                <p class="paragraph">Upload</p>
+            </div>
+            <div class="note">
+                <span>
+                    <i class="ph-bold ph-warning-circle"></i>
+                </span>
+                <p class="paragraph">Adding images increases your Ad visibility by up to 5%</p>
+            </div>
+        </section>
+
+        <section class="product-details">
+            <h2 class="product-details-heading ">Product Details</h2>
+            <form action="" class="product-details-form">
+
+                <label for="product-name">Product Name</label>
+                <input type="text" id="product-name" placeholder="e.g, Watermelons">
+
+                <label for="category">Category</label>
+                <select name="category" id="category">
+                    <option value="" disabled selected>Select Category</option>
+                    <option value="fruits">Fruits</option>
+                    <option value="vegetables">Vegetables</option>
+                    <option value="grains">Grains</option>
+                    <option value="dairy">Dairy</option>
+                    <option value="meat">Meat</option>
+                </select>
+
+                <label for="location">Location</label>
+                <input type="text" id="location" placeholder="City, State">
+
+                <label for="quantity">Quantity</label>
+                <input type="text" id="quantity" placeholder="e.g, 100 kgs">
+
+                <label for="unit">Unit</label>
+                <select name="unit" id="unit">
+                    <option value="" disabled selected>Select Unit</option>
+                    <option value="kgs">Kgs</option>
+                    <option value="tons">Tons</option>
+                    <option value="bags">Bags</option>
+                    <option value="pieces">Pieces</option>
+                </select>
+
+                <label for="price">Price Range(per unit)</label>
+                <input type="text" id="price" placeholder="From(e.g, $10)">
+                <input type="text" id="price-to" placeholder="To(e.g, $50)">
+
+                <label for="available-from">Available From</label>
+                <input type="date" id="available-from">
+                <label for="available-until">Available Until</label>
+                <input type="date" id="available-until">
+                
+                <label for="description">Description</label>
+                <textarea name="description" id="description" placeholder="Describe your product,quality,certification,etc"></textarea>
+                <p>0/500 Characters</p>
+
+                <div class="checkboxes">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="organic">
+                        <label for="organic">Organic Certified</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="quality">
+                        <label for="quality">Quality Certified</label>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <section class="buttons">
+            <button class="cancel-btn btn">Cancel</button>
+            <button class="post-btn btn">Post Ad</button>
+        </section>
+    </div>
+
+</body>
+</html>
