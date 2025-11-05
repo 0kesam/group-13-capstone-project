@@ -9,3 +9,11 @@ toggle.addEventListener("click", () => {
       navbar.style.display = "block";
    }
 });
+
+// for hero section
+const marketplaceBtn = document.querySelector(".btn__signup");
+const marketplaceBtn2 = document.querySelector(".btn__getstarted");
+
+marketplaceBtn.addEventListener("click", ()=>{
+   window.location.href = "marketplaceBuyers.html"
+})

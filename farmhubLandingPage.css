@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
   font-family: "Montserrat", sans-serif;
 }
 
@@ -465,18 +464,20 @@ html{
 }
 .about__img{
   width: 450px;
- box-shadow:  6px 5px 16px -4px rgba(131, 195, 147, 1.0);
+  box-shadow:  6px 5px 16px -4px rgba(131, 195, 147, 1.0);
   height: auto;
   border-radius: 1rem;
   object-fit: cover;
 }
+
 .about__description{
   flex: 2;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
   max-width: 600px;
   font-size: 2rem;
+  line-height: 1.5;
 }
 
 .about__btn{
