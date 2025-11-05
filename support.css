@@ -1,6 +1,6 @@
 /* General Body Styles for the main content area */
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4; /* Page background */
@@ -16,37 +16,24 @@ main {
 /* --- Welcome Section Styles --- */
 .welcome-section {
     text-align: center;
-    padding: 20px 0;
-    /* background-color: #1a4f1a; */
-   
+    /* padding: 20px 0; */
+
+    
 }
  .text{
-  
-  background-color: #1a4f1a;
-     
+  background-color: #1a4f1a; 
+  height: 30vh; 
+  width: 100%;
+  padding: 20px; 
 } 
-
-.welcome-section h2 {
-    font-size: 2.5em;
-    font-weight: 700;
-    margin-bottom: 5px;
-    color: #f4f4f4;;
-}
-
-.welcome-section p {
-    font-size: 1.1em;
-    color: #f4f4f4;
-    margin-bottom: 30px;
-
-}
 
 .image-gallery {
     display: flex;
     justify-content: center;
     gap: 15px;
-    margin-bottom: 60px;
-    
+    margin-top: -100px;
 }
+
 
 .gallery-item {
     width: 30%;
@@ -61,9 +48,25 @@ main {
     overflow: hidden; /* Ensures content/background images fit */
 }
 
+.welcome-section h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #f4f4f4;
+}
+
+.welcome-section p {
+    font-size: 1.1em;
+    color: #f4f4f4;
+    margin-bottom: 30px;
+
+}
+
+
+
 /* --- FAQ Section Styles --- */
 .faq-section {
-    padding: 20px 0;
+    padding: 50px 0;
     color: #1a4f1a;
 }
 

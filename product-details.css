@@ -326,7 +326,7 @@ textarea{
   position: relative;
   display: inline-flex;
   align-items: center;
-  background-color: #0B4812;
+  background-color: #16611f;
   color: #fff;
   text-decoration: none;
   padding: 0.8rem 1.5rem;
@@ -341,18 +341,24 @@ textarea{
 }
 
 .cart-link:hover {
-  background-color: #09380e;
+  background-color: #175f1e;
 }
 
 #cart-count {
   background: #ff3333;
   color: #fff;
   border-radius: 50%;
-  padding: 0.2rem 0.6rem;
-  font-size: 1.2rem;
-  margin-right: 0.5rem;
+  padding: 0 0.3rem;
+  font-size: 1.1rem;
+  /* margin-right: 0.5rem; */
   position: relative;
   top: -2px;
+}
+
+.heading-home a,
+.heading-marketplace a{
+    color: #0B4812;
+    text-decoration: none;
 }
 
 

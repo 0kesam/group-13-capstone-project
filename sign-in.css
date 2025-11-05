@@ -85,6 +85,11 @@ body{
     justify-content: center;
 }
 
+.create-btn a,
+.sign-in-btn a{
+    color: #fff;
+}
+
 .sign-in-form{
     margin: 2rem 0;
     display: flex;
