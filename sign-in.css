@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+body{
+    background: whitesmoke;
+}
+.html{
+    font-size: 62.5%;
+}
+.main-page{
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.1rem;
+}
+@media(max-width: 600px){
+    .main-page{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .welcome-back{
+        width: 100%;
+        /* align-items: center; */
+    }
+
+    .sign-in-btn, 
+    .explore-btn{
+        width: 100%;
+    }
+}
+.heading{
+    font-size: 3rem;
+    color: #0B4812;
+}
+
+.paragraph{
+    font-size: 2rem;
+    color: #0B4812;
+    line-height: 2.4rem;   
+}
+
+.welcome-back{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    gap: 1rem;
+}
+
+.welcome-back-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.btn{
+    border: none;
+    border-radius: 8px;
+}
+
+.explore-btn{
+    background-color: #fff;
+    color: #0B4812;
+    font-size: 1.2rem;
+}
+
+.sign-in-btn{
+    background-color: #0B4812;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.sign-in-btn:hover,
+.create-btn:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+  transition: all 0.2s ease;
+}
+
+
+.sign-in{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.create-btn a,
+.sign-in-btn a{
+    color: #fff;
+}
+
+.sign-in-form{
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#email,#password{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 6px;
+    border: none;
+}
+
+label{
+    margin-bottom: 6px;
+}
+#password {
+    margin: 8px 0;
+}
+.check-box{
+    display: flex;
+    gap: 8px;
+}
+
+
+#forget-password {
+    align-self: flex-end;
+    margin-right: 1rem;
+}
+
+.sign-in-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    text-align: center;
+    font-weight: 700;
+}
+.create-btn,.continue-btn{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 8px;
+    border: none;
+    font-weight: 700;
+}
+
+.create-btn{
+    background-color: #0B4812;
+    color: #fff;
+}
+.continue-btn{
+    background-color: #fff;
+}
+a{
+    text-decoration: none;
+    color: black;
+}

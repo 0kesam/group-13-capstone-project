@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCT-DETAILS PAGE</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/thin/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+
+    <!-- phosphor icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/css/icons.min.css">
+   <link rel="stylesheet" href="farmhubLandingPage.css">
+   <link rel="stylesheet" href="marketplaceBuyers.css">
+    
+    <link rel="stylesheet" href="product-details.css">
+</head>
+<body>
+
+
+    <section class="header">
+      <div class="header__wrapper">
+         <span class="header__logo">
+            <a href="index.html"> <img src="logo/IMG-20251029-WA0015.png" alt=""></a>
+            <h1 class="header__logo">FarmHub</h1>
+         </span>
+         <span class="mobile__menu">
+            <i id="toggle" class="ph ph-list"></i>
+         </span>
+     
+            <ul class="navbar__items" id="navbar">
+               <li class="navbar__link"><a href="index.html">Home</a></li>
+               <li class="navbar__link"><a href="marketplaceBuyers.html">Marketplace</a></li>
+               <li class="navbar__link"><a href="marketPlaceFarmers.html">Find Farmers</a></li>
+               <li class="navbar__link"><a href="support.html">Support</a></li>
+               <li class="navbar__link"><a href="contact.html">About Us</a></li>
+
+
+               <ul class="navbar__signup" >
+                  <li class="navbar__login"><a href="index.html">Sign In</a></li>
+                  <li class="navbar__getStarted"><a href="shop.html">Get Started</a></li>
+               </ul>
+            </ul>  
+            
+            
+      </div>
+   </section>
+
+    <!-- the whole container  -->
+    <main class="main-content">
+
+        <div class="heading">
+            <div class="heading-home">
+                <span><a href="index.html">Home</a></span>
+                <span>
+                    <i class="ph ph-caret-right"></i>
+                </span>
+             </div>
+
+            <div class="heading-marketplace">
+                <span><a href="marketplaceBuyers.html">Marketplace</a></span>
+                <span>
+                 <i class="ph ph-caret-right"></i>
+                </span>
+            </div>
+
+
+            <div class="heading-product-name">
+                <span>Product Name</span>
+            </div>
+
+            <!-- Cart Button -->
+            <a href="cart.html" class="cart-link">
+            <i class="fa fa-shopping-cart"></i>
+            <span id="cart-count">1</span>
+            View Cart
+            </a>
+
+        </div>
+
+        <div class="farmer-details">
+            <h3>Farmer Details</h3>
+            <p><strong>Name:</strong> <span class="farmer-name">Loading...</span></p>
+            <p><strong>Phone:</strong> <span class="farmer-phone">Loading...</span></p>
+            <p><strong>Location:</strong> <span class="farmer-location">Loading...</span></p>
+        </div>
+
+
+        <!-- product image and product description section  -->
+        <section class="product-image-description-content">
+            <section class="right">
+                <div class="image-text">
+                    <div class="image">
+                        <!-- <img src="IMAGES/carrot-image.jpg" alt="Carrot Image"> -->
+                    </div>
+                    <div class="text">
+                        <div class="beloved-text">
+                            <h1>Beloved Farm</h1>
+                            <span>
+                                 <i class="ph-fill ph-seal-check"></i>
+                            </span>
+                            <span>Verified Seller</span>
+                        </div>
+
+                        <div class="location-text">
+                            <span>
+                                <i class="ph-fill ph-map-pin"></i>
+                            </span>
+                            <span>Plateau State, Nigeria</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reviews-section">
+                    <h1>Reviews</h1>
+                    <div class="review-text">
+                        <p>Showing 1-3 of 18 results</p>
+                        <p><a href="">View More</a></p>
+                    </div>
+
+                    <div class="customer-review">
+                        <div class="customer-image"></div>
+                        <div class="customer-name">
+                            <h2>Ryan Etim</h2>
+                            <p>Verified User</p>
+                        </div>
+                        <div class="product">
+                            <h2>Sweet Carrots</h2>
+                            <p>Very fresh and nice carrots!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- product description section  -->
+            <section class="product-description">
+                <p class="product-description-paragraph">Vegetables</p>
+                <div class="description-heading">
+                    <h1 class="product-description-heading">Carrots</h1>
+                    <button class="product-description-btn">Available</button>
+                </div>
+
+                <div class="star-rating">
+                    <div class="product-description-stars">
+                        <i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star"></i>
+                        <i class="ph-fill ph-star"></i>
+                        <i class="ph-thin ph-star thin-star"></i>
+                    </div>
+
+                        <p class="star-rating-paragraph">4.0  (50 Reviews)</p>
+                </div>
+
+                    <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam officiis qui quo enim voluptate.
+                         Reiciendis, facere placeat ad recusandae 
+                        ex accusantium possimus ipsam.</p>
+                    
+                    <h3 class="price-heading">Price: $5/kg</h3>
+
+                    <div class="quantity-section">
+                        <p class="quantity-heading">Quantity</p>
+                        <div class="quantity-buttons">
+                            <button class="quantity-btn primary-btn">-</button>
+                            <button class="quantity-btn secondary-btn">1</button>
+                            <button class="quantity-btn primary-btn">+</button>
+                        </div>
+                    </div>
+
+                    <div class="cart-section">
+                        <div class="cart-buttons">
+                            <button class="cart-btn add-btn">Add to Cart</button>
+                            <button class="cart-btn contact-btn">Contact Seller</button>
+                        </div>
+
+                        <div class="safety-card">
+                            <p>Safety Tips</p>
+                            <ul class="tips-list">
+                                <li>Avoid paying in advance, even for delivery</li>
+                                <li>Meet with the seller at a safe public place</li>
+                                <li>First check what you are going to buy to make sure it is what you need</li>
+                                <li>Only pay if you are satisfied</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="rate-review-section">
+                        <div class="rate">
+                            <h4 class="rate-heading">Rate</h4>
+                            <div class="rate-stars">
+                                <i class="ph-thin ph-star"></i>
+                                <i class="ph-thin ph-star"></i>
+                                <i class="ph-thin ph-star"></i>
+                                <i class="ph-thin ph-star"></i>
+                                <i class="ph-thin ph-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="review">
+                            <p>Write a Review</p>
+                            <textarea name="" id=""></textarea>
+                            <button class="submit-btn add-btn">Submit</button>
+                        </div>
+                    </div>
+                
+                <!-- product description image  -->
+                <div class="left-image-content">
+                    <h1 class="image-content-heading2"><a href="">Products by the same seller</a></h1>
+                    <div class="image-card2">
+                        <div class="tomato-image">
+                            <!-- <img src="IMAGES/tomato-image.jpg" alt="Tomato Image"> -->
+                        </div>
+
+                        <div class="beans-image">
+                            <!-- <img src="IMAGES/goat-image.jpg" alt="Goat Image"> -->
+                        </div>
+
+                        <div class="banana-image">
+                            <!-- <img src="IMAGES/groundnut-image.jpg" alt="Groundnut Image"> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="left-image-content">
+                    <div class="image-card2">
+                        <div class="tomato-image">
+                            <!-- <img src="IMAGES/tomato-image.jpg" alt="Tomato Image"> -->
+                        </div>
+
+                        <div class="beans-image">
+                            <!-- <img src="IMAGES/goat-image.jpg" alt="Goat Image"> -->
+                        </div>
+
+                        <div class="banana-image">
+                            <!-- <img src="IMAGES/groundnut-image.jpg" alt="Groundnut Image"> -->
+                        </div>
+                    </div>
+                </div>
+
+                
+            </section>
+        </section>
+        
+        <!-- bottom image section   -->
+        <section class="image-content">
+            <h1 class="image-content-heading">You may also like</h1>
+            <div class="image-card">
+                <div class="image1">
+                    <!-- <img src="IMAGES/tomato-image.jpg" alt="Tomato Image"> -->
+                </div>
+
+                <div class="goat-image image2">
+                    <!-- <img src="IMAGES/goat-image.jpg" alt="Goat Image"> -->
+                </div>
+
+                <div class="groundnut-image image3">
+                    <!-- <img src="IMAGES/groundnut-image.jpg" alt="Groundnut Image"> -->
+                </div>
+
+                <div class="rabbit-image image4">
+                    <!-- <img src="IMAGES/rabbit-image.jpg" alt="Rabbit Image"> -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <section class="footer">
+      <div class="footer__wrapper">
+          
+        <div class="footer__contact">
+         <span class="footer__logo">
+            <a href="index.html"> <img src="logo/IMG-20251029-WA0015.png" alt=""></a>
+            <h1 class="footer__logo">FarmHub</h1>
+         </span>
+            <p>Bridges the gap between reliable farmers and trusted sellers</p>
+         
+        </div>
+
+        <div class="footer__links">
+            <h4>For Farmers</h4>
+            <a href="#">List Products</a>
+            <a href="#">Find Buyers</a>
+            <a href="#">For Farmers</a>
+        </div>
+
+        <div class="footer__links">
+            <h4>For Buyers</h4>
+            <a href="#">Browse Products</a>
+            <a href="#">Find Farmers</a>
+            <a href="#">Pricing</a>
+        </div>
+        <div class="footer__links">
+            <h4>Company</h4>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </div>
+
+      <div class="copywrite">
+         <p>© 2025 FarmHub. All rights reserved.</p>
+         <span>
+            <a href="#"><i class="ph ph-facebook-logo"></i></a>
+            <a href="#"><i class="ph ph-twitter-logo"></i></a>
+            <a href="#"><i class="ph ph-instagram-logo"></i></a>
+            <a href="#"><i class="ph ph-linkedin-logo"></i></a>
+          </span>
+      </div> 
+    </section>
+
+
+   <script src="farmhubLandingPage.js"></script>
+   <script src="marketPlace.js"></script>
+   <script src="product-details.js"></script>
+</body>
+</html>

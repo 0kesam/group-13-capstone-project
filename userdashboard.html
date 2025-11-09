@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FarmHub | Beloved Farm</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+
+    <!-- phosphor icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/css/icons.min.css">
+
+   <link rel="stylesheet" href="farmhubLandingPage.css">
+   <link rel="stylesheet" href="marketplaceBuyers.css">
+   <link rel="stylesheet" href="product-details.css">
+
+  <link rel="stylesheet" href="userdashboard.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+
+  <section class="header">
+      <div class="header__wrapper">
+         <span class="header__logo">
+            <a href="index.html"> <img src="logo/IMG-20251029-WA0015.png" alt=""></a>
+            <h1 class="header__logo">FarmHub</h1>
+         </span>
+         <span class="mobile__menu">
+            <i id="toggle" class="ph ph-list"></i>
+         </span>
+     
+            <ul class="navbar__items" id="navbar">
+               <li class="navbar__link"><a href="index.html">Home</a></li>
+               <li class="navbar__link"><a href="marketplaceBuyers.html">Marketplace</a></li>
+               <li class="navbar__link"><a href="marketPlaceFarmers.html">Find Farmers</a></li>
+               <li class="navbar__link"><a href="support.html">Support</a></li>
+               <li class="navbar__link"><a href="#">About Us</a></li>
+
+
+               <div class="user-actions">
+      <span class="user">👤 H. Mustapha</span>
+      <a href="cart.html" class="cart-link">
+            <i class="fa fa-shopping-cart"></i>
+            <span id="cart-count">1</span>
+      </a>
+      <button  id="logoutBtn" class="signout-btn">Sign Out</button>
+       
+    </div>
+            </ul>  
+            
+            
+      </div>
+   </section>
+ 
+
+  <!-- ===== DASHBOARD SECTION ===== -->
+  <section class="farm-profile">
+
+    <div class="farm-banner">
+      <img src="img/userpage-banner.jpg" alt="Farm background">
+    </div>
+
+    <div class="farm-header">
+      <div class="farm-avatar">
+        <img src="img/profileimg.jpg" alt="Farm avatar">
+        <h2>Beloved Farm</h2>
+      </div>
+      <div class="farm-info">
+        
+        <div class="farm-meta">
+          <span>
+            <span>✔ Verified Seller</span>
+            <span>🌿 Naturally Grown</span>
+          </span>
+
+          <span>
+            <span>📍 Location</span>
+            <span>⭐ 4.5 (10 reviews)</span>
+          </span>
+        </div>
+        <button class="message-btn"><a style="color: #fff; text-decoration: none;" href="chatbox.html">Send Message</a></button>
+      </div>
+    </div>
+
+    <!-- ===== TABS ===== -->
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="products">Products (10)</button>
+      <button class="tab-btn" data-tab="about">About</button>
+      <button class="tab-btn" data-tab="reviews">Reviews (10)</button>
+    </div>
+
+    <!-- ===== PRODUCTS TAB ===== -->
+    <div class="tab-content active" id="products">
+      <div class="product-list">
+        <div class="product-item">
+          <img src="img/carrot.jpg" alt="Carrots">
+          <div class="product-details">
+            <h4>Carrots</h4>
+            <p>Crisp, colorful, naturally grown carrots</p>
+            <p>Quantity: 10 kg</p>
+            <p>Price: $2 per kg</p>
+          </div>
+          <button class="quote-btn btn">Request Quote</button>
+        </div>
+
+        <div class="product-item">
+          <img src="img/rabbits.jpg"Rabbits">
+          <div class="product-details">
+            <h4>Rabbits</h4>
+            <p>Friendly black and white rabbits</p>
+            <p>Quantity: 5–7 kg</p>
+            <p>Price: $25</p>
+          </div>
+          <button class="quote-btn btn">Request Quote</button>
+        </div>
+
+        <div class="product-item">
+          <img src="img/agrowaste.jpg" alt="Agrowaste">
+          <div class="product-details">
+            <h4>Agrowaste</h4>
+            <p>Sustainable agrowaste for smart businesses</p>
+            <p>Quantity: 50–70 kg</p>
+            <p>Price: $2</p>
+          </div>
+          <button class="quote-btn btn">Request Quote</button>
+        </div>
+      </div>
+
+      <p class="see-more">↓ See more</p>
+    </div>
+
+    <!-- ===== ABOUT TAB ===== -->
+    <div class="tab-content" id="about">
+      <h3>About</h3>
+      <p>
+        We are passionate about sustainable farming and growing fresh, high-quality produce. 
+        Our farm is dedicated to caring for the land, supporting our community, 
+        and bringing wholesome food straight from our fields to your table.
+      </p>
+    </div>
+
+    <!-- ===== REVIEWS TAB ===== -->
+    <div class="tab-content" id="reviews">
+      <h3>Reviews</h3>
+      <div class="review-item">
+        <div class="review-header">
+          <img src="img/john.jpg" alt="User">
+          <div>
+            <h4>John</h4>
+            <p>⭐⭐⭐⭐☆</p>
+          </div>
+        </div>
+        <p>Products came looking very fresh. I loved them!</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <section class="footer">
+      <div class="footer__wrapper">
+          
+        <div class="footer__contact">
+         <span class="footer__logo">
+            <a href="index.html"> <img src="logo/IMG-20251029-WA0015.png" alt=""></a>
+            <h1 class="footer__logo">FarmHub</h1>
+         </span>
+            <p>Bridges the gap between reliable farmers and trusted sellers</p>
+         
+        </div>
+
+        <div class="footer__links">
+            <h4>For Farmers</h4>
+            <a href="#">List Products</a>
+            <a href="#">Find Buyers</a>
+            <a href="#">For Farmers</a>
+        </div>
+
+        <div class="footer__links">
+            <h4>For Buyers</h4>
+            <a href="#">Browse Products</a>
+            <a href="#">Find Farmers</a>
+            <a href="#">Pricing</a>
+        </div>
+        <div class="footer__links">
+            <h4>Company</h4>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        
+
+        
+    </div>
+
+      <div class="copywrite">
+         <p>© 2025 FarmHub. All rights reserved.</p>
+         <span>
+            <a href="#"><i class="ph ph-facebook-logo"></i></a>
+            <a href="#"><i class="ph ph-twitter-logo"></i></a>
+            <a href="#"><i class="ph ph-instagram-logo"></i></a>
+            <a href="#"><i class="ph ph-linkedin-logo"></i></a>
+          </span>
+      </div> 
+    </section>
+
+  <script src="farmhubLandingPage.js"></script>
+  <script src="marketPlace.js"></script>
+  <script src="userdashboard.js"></script>
+</body>
+</html>

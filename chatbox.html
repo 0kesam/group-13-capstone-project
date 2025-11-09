@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FarmHub Chat</title>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+
+    <!-- phosphor icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/css/icons.min.css">
+
+   <link rel="stylesheet" href="farmhubLandingPage.css">
+   <link rel="stylesheet" href="marketplaceBuyers.css">
+   <link rel="stylesheet" href="product-details.css">
+
+  <link rel="stylesheet" href="userdashboard.css">
+  <link rel="stylesheet" href="chatbox.css">
+</head>
+<body>
+
+   <section class="header">
+      <div class="header__wrapper">
+         <span class="header__logo">
+            <a href="index.html"> <img src="logo/IMG-20251029-WA0015.png" alt=""></a>
+            <h1 class="header__logo">FarmHub</h1>
+         </span>
+         <span class="mobile__menu">
+            <i id="toggle" class="ph ph-list"></i>
+         </span>
+     
+            <ul class="navbar__items" id="navbar">
+               <li class="navbar__link"><a href="index.html">Home</a></li>
+               <li class="navbar__link"><a href="marketplaceBuyers.css">Marketplace</a></li>
+               <li class="navbar__link"><a href="marketPlaceFarmers.html">Find Farmers</a></li>
+               <li class="navbar__link"><a href="support.html">Support</a></li>
+               <li class="navbar__link"><a href="contact.html">About Us</a></li>
+
+
+               <div class="user-actions">
+      <span class="user">👤 H. Mustapha</span>
+      <a href="cart.html" class="cart-link">
+            <i class="fa fa-shopping-cart"></i>
+            <span id="cart-count">1</span>
+      </a>
+      <button class="signout-btn">Sign Out</button>
+       
+    </div>
+            </ul>  
+            
+            
+      </div>
+   </section>
+
+   <section class="main">
+  <div class="chat-container">
+    <div class="chat-header">FarmHub Chat</div>
+
+    <div id="messages"></div>
+
+    <div class="chat-input">
+      <select id="sender">
+        <option value="left">User</option>
+        <option value="right">Admin</option>
+      </select>
+
+      <input type="text"  class="msgInput" id="messageInput" placeholder="Type your message...">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+  </section>
+
+  <!-- Link to your JavaScript -->
+  <script type="module" src="chatbox.js"></script>
+
+</body>
+</html>

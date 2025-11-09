@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FarmHub | Create Account</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+
+    <!-- phosphor icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/css/icons.min.css">
+
+   <link rel="stylesheet" href="farmhubLandingPage.css">
+   <link rel="stylesheet" href="marketplaceBuyers.css">
+
+  <link rel="stylesheet" href="getstarted.css" />
+
+</head>
+<body>
+
+  <section class="header">
+      <div class="header__wrapper">
+         <span class="header__logo">
+            <a href="index.html"><img src="logo/IMG-20251029-WA0015.png" alt=""></a>
+            <a class="header__logo">FarmHub</a>
+         </span>
+          
+         <span class="mobile__menu">
+            <i id="toggle" class="ph ph-list"></i>
+         </span>
+     
+            <ul class="navbar__items" id="navbar">
+               <li class="navbar__link"><a href="index.html">Home</a></li>
+               <li class="navbar__link"><a href="marketplaceBuyers.html">Marketplace</a></li>
+               <li class="navbar__link"><a href="marketPlaceFarmers.html">Find Farmers</a></li>
+               <li class="navbar__link"><a href="support.html">Support</a></li>
+               <li class="navbar__link"><a href="#">About Us</a></li>
+
+
+               <ul class="navbar__signup" >
+                  <li class="navbar__login"><a href="sign-in.html">Sign In</a></li>
+                  <li class="navbar__getStarted"><a href="getstarted.html">Get Started</a></li>
+               </ul>
+            </ul>  
+            
+            
+      </div>
+   </section>
+
+    <main class="container">
+    <section class="left">
+      <h1>Sign Up For Free</h1>
+      <p>A connected farming community where every farmer can succeed</p>
+      <div class="buttons">
+        <button class="btn-outline"><a style="color: rgb(27, 78, 27); text-decoration: none;" href="marketplaceBuyers.html">Explore Marketplace</a></button>
+        <button class="btn-fill"><a style="color: #fff ; text-decoration: none;" href="sign-in.html">Sign In</a></button>
+      </div>
+    </section>
+
+    <section class="right">
+      <h1>Create New Account</h1>
+      <form>
+        <label>Email</label>
+        <input type="email" placeholder="Enter Email" required />
+
+        <label>First Name</label>
+        <input type="text" placeholder="Enter First Name" required />
+
+        <label>Last Name</label>
+        <input type="text" placeholder="Enter Last Name" required />
+
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter Phone Number" required />
+
+        <label>Account Type</label>
+        <select required>
+          <option value="">Select Account Type</option>
+          <option value="farmer">Farmer</option>
+          <option value="buyer">Buyer</option>
+          <option value="Both">Buyer & Farmer</option>
+        </select>
+
+        <label>Password</label>
+        <input type="password" placeholder="Enter Password" required />
+
+        <label>Confirm Password</label>
+        <input type="password" placeholder="Enter Confirm Password" required />
+
+        <div class="terms">
+          <input type="checkbox" required  class="box"/>
+          <div class="Agree"><span>Agree to terms and policy</span></div>
+        </div>
+
+        <button type="submit" class="btn-fill full">Create Account</button>
+
+        <div class="divider">OR</div>
+
+        <button class="btn-google full">Continue With Google</button>
+      </form>
+    </section>
+  </main>
+
+
+
+
+  <section class="footer">
+      <div class="footer__wrapper">
+          
+        <div class="footer__contact">
+         <span class="footer__logo">
+            <a href="index.html"> <img src="logo/IMG-20251029-WA0015.png" alt=""></a>
+            <h1 class="footer__logo">FarmHub</h1>
+         </span>
+            <p>Bridges the gap between reliable farmers and trusted sellers</p>
+         
+        </div>
+
+        <div class="footer__links">
+            <h4>For Farmers</h4>
+            <a href="#">List Products</a>
+            <a href="#">Find Buyers</a>
+            <a href="#">For Farmers</a>
+        </div>
+
+        <div class="footer__links">
+            <h4>For Buyers</h4>
+            <a href="#">Browse Products</a>
+            <a href="#">Find Farmers</a>
+            <a href="#">Pricing</a>
+        </div>
+        <div class="footer__links">
+            <h4>Company</h4>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        
+
+        
+    </div>
+
+      <div class="copywrite">
+         <p>© 2025 FarmHub. All rights reserved.</p>
+         <span>
+            <a href="#"><i class="ph ph-facebook-logo"></i></a>
+            <a href="#"><i class="ph ph-twitter-logo"></i></a>
+            <a href="#"><i class="ph ph-instagram-logo"></i></a>
+            <a href="#"><i class="ph ph-linkedin-logo"></i></a>
+          </span>
+      </div> 
+    </section>
+  <script src="farmhubLandingPage.js"></script>
+  <script src="getstarted.js"> </script>
+</body>
+</html>
