@@ -77,7 +77,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // --- Contact button ---
     card.querySelector(".btn__contact").addEventListener("click", () => {
-      alert("Contact Farmer feature coming soon!");
+      // alert("Contact Farmer feature coming soon!");
+      window.location.href = "chatbox.html"
     });
 
     adsContainer.appendChild(card);
@@ -148,7 +149,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Contact click
     card.querySelector(".btn__contact").addEventListener("click", () => {
-      alert("Contact Farmer feature coming soon!");
+      // alert("Contact Farmer feature coming soon!");
+      window.location.href = "chatbox.html"
     });
 
     return card;
