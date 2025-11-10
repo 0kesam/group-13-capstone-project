@@ -1,38 +1,39 @@
-const signInBtn = document.querySelector(".sign-in-btn");
+const loginForm = document.querySelector(".sign-in-form");
+const password = document.getElementById("password");
+const email = document.getElementById("email");
 
-signInBtn.addEventListener("click", (e) => {
+loginForm.addEventListener("submit", async (e) => {
   e.preventDefault();
+  console.log(password.value, email.value);
+  if (!password || !email) {
+    alert("Please fill in all fields.");
+    return;
+  }
 
-  const email = document.getElementById("email").value.trim();
-  const password = document.getElementById("password").value.trim();
+  try {
+    const response = await fetch(
+      "https://farmhub-backend-26rg.onrender.com/api/users/login",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          password: password.value,
+          email: email.value,
+        }),
+      }
+    );
 
-  const users = JSON.parse(localStorage.getItem("users")) || [];
-
-  const matchedUser = users.find((u) => u.email === email && u.password === password);
-
-  if (matchedUser) {
-    alert("Login successful!");
-    localStorage.setItem("loggedInUser", JSON.stringify(matchedUser));
-    window.location.href = "userdashboard.html";
-  } else {
-    alert("No account found. Please create one first.");
+    const data = await response.json();
+    if (response.ok) {
+      localStorage.setItem("authToken", data.token);
+      alert(data.message);
+      window.location.href = "marketplaceFarmers.html";
+    }
+  } catch (error) {
+    alert("An error occurred. Please try again later.");
+    console.log(error);
+    alert(error.message);
   }
 });
-
-
-
-
-const loginForm = document.getElementById("loginForm");
-
-loginForm.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-
-  // Save user info
-  localStorage.setItem("currentUser", JSON.stringify({ name, email }));
-
-  window.location.href = "userdashboard.html";
-});
-
