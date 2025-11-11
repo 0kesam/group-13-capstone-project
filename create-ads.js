@@ -1,27 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const sellBtn = document.getElementById("sellBtn");
-  const buyBtn = document.getElementById("buyBtn");
   const adForm = document.getElementById("adForm");
   const uploadInput = document.getElementById("imageUpload");
   const preview = document.getElementById("preview");
   const submitBtn = document.querySelector(".submit-btn");
   const cancelBtn = document.querySelector(".cancel-btn");
   const backBtn = document.querySelector(".back-btn");
-
-  let adType = "sell"; // default
-
-  // ---- TOGGLE BETWEEN SELL / BUY ----
-  sellBtn.addEventListener("click", () => {
-    adType = "sell";
-    sellBtn.classList.add("active");
-    buyBtn.classList.remove("active");
-  });
-
-  buyBtn.addEventListener("click", () => {
-    adType = "buy";
-    buyBtn.classList.add("active");
-    sellBtn.classList.remove("active");
-  });
 
   // ---- IMAGE PREVIEW ----
   uploadInput.addEventListener("change", (e) => {
@@ -31,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const reader = new FileReader();
       reader.onload = (e) => {
         const img = document.createElement("img");
-        img.src = e.target.result;
+        img.src = e.target.result; // preview only
         img.style.width = "100px";
         img.style.height = "100px";
         img.style.objectFit = "cover";
@@ -44,68 +27,74 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // ---- HANDLE FORM SUBMIT ----
-  submitBtn.addEventListener("click", (e) => {
+  submitBtn.addEventListener("click", async (e) => {
     e.preventDefault();
 
-    // Get all inputs
-    const productName = document.querySelector("input[placeholder='e.g. Watermelon']").value;
-    const category = document.querySelector("select").value;
-    const location = document.querySelector("input[placeholder='City, State']").value;
-    const quantity = document.querySelector("input[placeholder='500']").value;
-    const unit = document.querySelectorAll("select")[1].value;
-    const priceFrom = document.querySelector("input[placeholder='From (₦)']").value;
-    const priceTo = document.querySelector("input[placeholder='To (₦)']").value;
-    const availableFrom = document.querySelectorAll("input[type='date']")[0].value;
-    const availableUntil = document.querySelectorAll("input[type='date']")[1].value;
-    const description = document.querySelector("textarea").value;
-    const organicCertified = document.querySelectorAll("input[type='checkbox']")[0].checked;
-    const qualityCertified = document.querySelectorAll("input[type='checkbox']")[1].checked;
+    const productName = document.querySelector("input[placeholder='e.g. Watermelon']").value.trim();
+    const description = document.querySelector("textarea").value.trim();
+    const price = Number(document.querySelector("input[placeholder='From (₦)']").value.trim());
+    const quantity = Number(document.querySelector("input[placeholder='500']").value.trim());
 
-    // Basic validation
-    if (!productName || !category || !location || !quantity || !unit) {
+    if (!productName || !description || !price || !quantity) {
       alert("Please fill in all required fields (*)");
       return;
     }
 
-    // Handle images (convert to base64)
+    const token = localStorage.getItem("authToken");
+    const farmerId = localStorage.getItem("userId"); // must store after login/registration
+
+    if (!token || !farmerId) {
+      alert("You need to be logged in to create an ad!");
+      window.location.href = "sign-in.html";
+      return;
+    }
+
+    // Prepare payload
+    const payload = {
+      name: productName,
+      description,
+      price,
+      quantity,
+      farmerId,
+      // Placeholder for future image support
+      images: [] 
+    };
+
+    // Convert uploaded images to base64 for preview (if backend supports later)
     const imageFiles = Array.from(uploadInput.files).slice(0, 5);
-    const imagePromises = imageFiles.map(
-      (file) =>
-        new Promise((resolve, reject) => {
-          const reader = new FileReader();
-          reader.onload = () => resolve(reader.result);
-          reader.onerror = reject;
-          reader.readAsDataURL(file);
-        })
-    );
+    if (imageFiles.length > 0) {
+      const imagePromises = imageFiles.map(file => new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = () => resolve(reader.result);
+        reader.onerror = reject;
+        reader.readAsDataURL(file);
+      }));
+      payload.images = await Promise.all(imagePromises);
+    }
 
-    Promise.all(imagePromises).then((images) => {
-      const adData = {
-        id: Date.now(),
-        adType,
-        productName,
-        category,
-        location,
-        quantity,
-        unit,
-        priceRange: { from: priceFrom, to: priceTo },
-        availableFrom,
-        availableUntil,
-        description,
-        organicCertified,
-        qualityCertified,
-        images,
-        datePosted: new Date().toISOString(),
-      };
+    try {
+      const response = await fetch("https://farmhub-backend-26rg.onrender.com/api/products", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`
+        },
+        body: JSON.stringify(payload)
+      });
 
-      // Save to localStorage
-      const ads = JSON.parse(localStorage.getItem("farmhubAds")) || [];
-      ads.push(adData);
-      localStorage.setItem("farmhubAds", JSON.stringify(ads));
+      const data = await response.json();
+      console.log("Create Ad response:", data);
 
-      alert("Ad created successfully!");
-      window.location.href = "marketPlaceFarmers.html";
-    });
+      if (response.ok) {
+        alert("Ad created successfully!");
+        window.location.href = "marketPlaceFarmers.html";
+      } else {
+        alert(data.message || "Failed to create ad. Please try again.");
+      }
+    } catch (error) {
+      console.error("Create Ad error:", error);
+      alert("An error occurred while creating the ad.");
+    }
   });
 
   // ---- CANCEL BUTTON ----

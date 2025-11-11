@@ -32,7 +32,7 @@ form.addEventListener("submit", async (e) => {
   };
   try {
     const response = await fetch(
-      "https://farmhub-backend-26rg.onrender.com/api/users/register",
+      "https://farmhub-backend-26rg.onrender.com/api/auth/register",
       {
         method: "POST",
         headers: {
@@ -44,12 +44,24 @@ form.addEventListener("submit", async (e) => {
 
     const data = await response.json();
     if (response.ok) {
+
+       localStorage.setItem("authToken", data.token);
+        localStorage.setItem("userName", data.name);
+        localStorage.setItem("userId", data.id);
       alert(data.message);
+      // console.log(data.message)
       window.location.href = "sign-in.html";
     }
   } catch (error) {
     alert("An error occurred. Please try again later.");
-    console.log(error);
+    // console.log(error);
     alert(error.message);
   }
+
+
+  
 });
+
+
+
+
