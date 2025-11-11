@@ -1,32 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const adForm = document.getElementById("adForm");
-  const uploadInput = document.getElementById("imageUpload");
-  const preview = document.getElementById("preview");
   const submitBtn = document.querySelector(".submit-btn");
-  const cancelBtn = document.querySelector(".cancel-btn");
-  const backBtn = document.querySelector(".back-btn");
 
-  // ---- IMAGE PREVIEW ----
-  uploadInput.addEventListener("change", (e) => {
-    const files = Array.from(e.target.files);
-    preview.innerHTML = "";
-    files.slice(0, 5).forEach((file) => {
-      const reader = new FileReader();
-      reader.onload = (e) => {
-        const img = document.createElement("img");
-        img.src = e.target.result; // preview only
-        img.style.width = "100px";
-        img.style.height = "100px";
-        img.style.objectFit = "cover";
-        img.style.borderRadius = "10px";
-        img.style.marginRight = "10px";
-        preview.appendChild(img);
-      };
-      reader.readAsDataURL(file);
-    });
-  });
-
-  // ---- HANDLE FORM SUBMIT ----
   submitBtn.addEventListener("click", async (e) => {
     e.preventDefault();
 
@@ -41,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const token = localStorage.getItem("authToken");
-    const farmerId = localStorage.getItem("userId"); // must store after login/registration
+    const farmerId = localStorage.getItem("userId");
 
     if (!token || !farmerId) {
       alert("You need to be logged in to create an ad!");
@@ -49,28 +23,14 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    // Prepare payload
+    // Only required fields for backend
     const payload = {
       name: productName,
       description,
       price,
       quantity,
-      farmerId,
-      // Placeholder for future image support
-      images: [] 
+      farmerId
     };
-
-    // Convert uploaded images to base64 for preview (if backend supports later)
-    const imageFiles = Array.from(uploadInput.files).slice(0, 5);
-    if (imageFiles.length > 0) {
-      const imagePromises = imageFiles.map(file => new Promise((resolve, reject) => {
-        const reader = new FileReader();
-        reader.onload = () => resolve(reader.result);
-        reader.onerror = reject;
-        reader.readAsDataURL(file);
-      }));
-      payload.images = await Promise.all(imagePromises);
-    }
 
     try {
       const response = await fetch("https://farmhub-backend-26rg.onrender.com/api/products", {
@@ -83,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
       const data = await response.json();
-      console.log("Create Ad response:", data);
+      console.log("Response:", data);
 
       if (response.ok) {
         alert("Ad created successfully!");
@@ -95,19 +55,5 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("Create Ad error:", error);
       alert("An error occurred while creating the ad.");
     }
-  });
-
-  // ---- CANCEL BUTTON ----
-  cancelBtn.addEventListener("click", (e) => {
-    e.preventDefault();
-    if (confirm("Discard your ad?")) {
-      adForm.reset();
-      preview.innerHTML = "";
-    }
-  });
-
-  // ---- BACK BUTTON ----
-  backBtn.addEventListener("click", () => {
-    window.history.back();
   });
 });
